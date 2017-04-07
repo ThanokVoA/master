@@ -155,6 +155,7 @@ struct npc_ancestral_wolfAI : public npc_escortAI
         DoCastSpellIfCan(m_creature, SPELL_ANCESTRAL_WOLF_BUFF);
     }
 
+    void UpdateEscortAI(const uint32 uiDiff) override { };
     void AttackStart(Unit* /*pWho*/) override { }
     void MoveInLineOfSight(Unit* /*pWho*/) override { }
 
